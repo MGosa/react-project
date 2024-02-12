@@ -1,6 +1,8 @@
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 
+
+
 export default function WeatherInfo(props){
     return (
       <div className="WeatherInfo">
