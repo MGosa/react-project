@@ -31,11 +31,14 @@ if(loaded){
         <div className="row">
           {forecast.map(function(dailyForecast, index){
             if (index<5){
-              return(
-          <div className="col" key={index}>
-            <WeatherForecstDay data={dailyForecast} />
-            </div>
-          );
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecstDay
+                    data={dailyForecast}
+                    icon={`https://openweathermap.org/img/wn/${dailyForecast.weather[0].icon}@2x.png`}
+                  />
+                </div>
+              );
           }else{
             return null;
           }

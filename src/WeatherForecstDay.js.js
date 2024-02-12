@@ -24,7 +24,8 @@ export default function WeatherForecstDay(props){
         <div>{day()}</div>
 
         <img
-          src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+        className="img-fluid"
+          src={props.icon}
           alt="cloudy"
         />
 
